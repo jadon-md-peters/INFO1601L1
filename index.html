@@ -1,33 +1,67 @@
-<!-- '!' for the Emmet Abbreviation-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="My first website">
+  <meta name="keywords" content="INFO1601, uwi, web">
+  <title>Jadon's Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #big-text {
+      font-size: 30px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>This is my first website, Welcome.</h1>
-    <blockquote cite="https://www.pinterest.com/jpgoesviral/j/">Find what you love and let it kill you.</blockquote><hr>
+    <h1 id="header">This is my Lab1 site</h1>
   </header>
-  <main>
   <article>
-    <img src="https://i.pinimg.com/736x/e6/66/08/e66608b7ebb97d813a9bd5ab6db6b9cd.jpg" onclick="">
-    <h2>What I'm Learning So Far</h2>
-    <p hidden>This is a secret!</p>
-    <p title="shoo!">I just learned of some assistive technologies. I watched a man named Christopher Hills, who has <b>Cerebral Palsy</b>, and was awestruck by his adaptability.<br> You can find his channel <a href="https://www.youtube.com/@icdhills">here.</a></p>
-    <p>I think he is:</p>
-    <ul>
-      <li>Brave</li>
-      <li>Resilient</li>
-      <li>An Important Voice</li>
-    </ul>
-    </article>
-  </main>
-  <footer>
-    <code>//Hello World<sup>2</sup></code>
-  </footer>
+    <section>
+      <p title="This is a tooltip">Below this is some pretty big text.</p>
+      <p hidden="true">This is a secret. Shhhhh!</p>
+      <a id="big-text" href="https://youtu.be/nfHRMqqO578?si=58DXstp24Q_yeVUP" style="color: red;">BIG TEXT</a>
+    </section>
+    <hr>
+    <section>
+      <b>This is bold text.</b> <br>
+      <strong>This is strong text.</strong> <br>
+      <code>This is code.</code> <br>
+      <samp>What the heck even is sample output?</samp> <br>
+      <kdb>AGAIN, WHAT IS KEYBOARD INPUT?</kdb> <br>
+      <mark>Highlighted text</mark> <br>
+      <em>Emphasised text.</em> <br>
+      <var>This is a variable I guess.</var> <br>
+      <cite>This is a citation.</cite> <br>
+      <dfn>Defination</dfn> <br>
+      <u>This should be underlined</u> <br>
+      <s>This is struck through.</s> <br>
+      <p>This is <sub>substript</sub> and this is <sup>superscript</sup>.</p>
+    </section>
+    <section>
+      <details>
+        <summary>Randon Character Names From Around My Bedroom:</summary>
+        <ul>
+          <li>Asuka Langley Soryu</li>
+          <li>Mint Fantome</li>
+          <li>Jim Hopper</li>
+          <li>Mickey Mouse</li>
+        </ul>
+      </details>
+    </section>
+    <hr>
+    <figure>
+      <img src="https://media.newyorker.com/photos/5e06335ca15be900089fe632/4:3/w_1743,h_1307,c_limit/Brody-CatsReview.jpg" style="width: 400px;">
+      <figcaption>Fig1. If I have to suffer, so will you!</figcaption>
+    </figure>
+    <dialog id="mydialog">
+      This is a dialog apparantly
+      <a href="javascript:mydialog.removeAttribute('open')">close</a>
+    </dialog>
+    <a href="javascript:document.querySelector('#mydialog').setAttribute('open', true)">
+      Open Dialog
+    </a>
+  </article>
 </body>
 </html>
